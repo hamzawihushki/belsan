@@ -1,236 +1,245 @@
 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 
 :root {
- --font-primary: "prata";
- --primary-color: #09124b;
- --secondary-color: #dcbe84;
- --white-color: #fff;
- --dark-color: #000;
+    --font-primary: "prata";
+    --primary-color: #09124b;
+    --secondary-color: #dcbe84;
+    --white-color: #fff;
+    --dark-color: #000;
 
 }
 
 body,
 html {
- overflow-x: hidden;
- margin: 0;
- padding: 0;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .logo {
- position: absolute;
- top: 5%;
- left: 50%;
- transform: translateX(-50%);
- z-index: 100;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
 }
 
 .logo img {
- width: 100%;
- object-fit: cover;
+    width: 100%;
+    object-fit: cover;
 }
 
 .hero {
- height: 100vh;
- width: 100%;
+    height: 100vh;
+    width: 100%;
 }
 
 .hero video {
- width: 100%;
- height: 100%;
- object-fit: cover;
- filter: brightness(.5);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(.5);
 }
 
 .belsan-wrapper {
- background-color: var(--primary-color);
- padding: 60px 0;
+    background-color: var(--primary-color);
+    padding: 60px 0;
 }
 
 .grid-belsan {
- padding: 50px 0;
+    padding: 50px 0;
 }
 
 .grid-img {
- width: 100%;
- object-fit: cover;
+    width: 100%;
+    object-fit: cover;
 }
 
 .wrapper-text-card {
- background-color: var(--white-color);
- height: 100%;
- padding: 160px 100px 0;
- text-align: left;
- overflow: hidden;
+    background-color: var(--white-color);
+    height: 100%;
+    padding: 160px 100px 0;
+    text-align: left;
+    overflow: hidden;
 }
 
 .title-card-grid h1 {
- font-family: var(--font-primary);
- font-size: 60px;
- padding: 20px 0 10px;
- color: var(--primary-color);
+    font-family: var(--font-primary);
+    font-size: 60px;
+    padding: 20px 0 10px;
+    color: var(--primary-color);
 }
 
 .title-card-grid small {
 
- font-size: 17px;
- letter-spacing: 2.1px;
- font-weight: 500;
- color: #c1c1c1;
- text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 2.1px;
+    font-weight: 500;
+    color: #c1c1c1;
+    text-transform: uppercase;
 
 }
 
 .title-card-grid p {
 
- margin: 0 !important;
- color: #000000b8;
- font-size: 19px;
+    margin: 0 !important;
+    color: #000000b8;
+    font-size: clamp(13px, 2vw, 20px);
 
 }
 
 .break-point {
- position: relative;
- padding: 30px 0;
+    position: relative;
+    padding: 30px 0;
 }
 
 .break-text {
- text-align: center;
- font-family: var(--font-primary);
- color: var(--white-color);
+    text-align: center;
+    font-family: var(--font-primary);
+    color: var(--white-color);
 }
 
 .break-point::after,
 .break-point::before {
 
- font-family: var(--font-primary);
- position: absolute;
- left: 50%;
- color: var(--secondary-color);
- font-size: xx-large;
+    font-family: var(--font-primary);
+    position: absolute;
+    left: 50%;
+    color: var(--secondary-color);
+    font-size: xx-large;
 }
 
 .break-point::after {
- content: ",,";
- bottom: 0;
+    content: ",,";
+    bottom: 0;
 }
 
 .break-point::before {
- content: ",,";
- top: -20px;
- bottom: auto;
+    content: ",,";
+    top: -20px;
+    bottom: auto;
 }
 
 .visit {
- width: 100%;
- height: 100vh;
- position: relative;
+    width: 100%;
+    height: 100vh;
+    position: relative;
 }
 
 .visit img {
- position: absolute;
- z-index: -1;
- width: 100%;
- height: 100%;
- object-fit: cover;
- object-position: center;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .square {
- position: absolute;
- width: 400px;
- height: 300px;
- z-index: 55;
- left: 50%;
- top: 40%;
- transform: translate(-50%, -50%);
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: space-around;
- text-align: center;
- gap: 10px;
- background-color: #ffffffa1;
+    position: absolute;
+    max-width: 400px;
+    height: 300px;
+    z-index: 55;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    gap: 10px;
+    background-color: #ffffffa1;
+    padding: 5px;
 }
 
 .square .head {
- position: relative;
- height: 100px;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: space-between;
+    position: relative;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
 }
 
 .square .head ::after {
- content: "";
- width: 50px;
- height: 2px;
- background-color: var(--secondary-color);
- position: absolute;
- left: 50%;
- bottom: -10px;
- transform: translateX(-50%);
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
 }
 
 .square .head small {
- color: #919191;
+    color: #919191;
+    font-size: clamp(10px, 2vw, 13px);
+
 }
 
 .square .head h1 {
- font-family: var(--font-primary);
- font-size: 35px;
+    font-family: var(--font-primary);
+    font-size: clamp(20px, 4vw, 40px);
+
 }
 
 .square p {
- font-size: 13px;
-
- color: #333333ad;
- font-weight: 700;
+    font-size: clamp(10px, 2vw, 13px);
+    padding: 0 10px;
+    color: #333333ad;
+    font-weight: 700;
 }
 
 .square .b {
- font-size: 13px;
+    font-size: clamp(6px, 2vw, 13px);
 
- color: #333333ad;
+
+    color: #333333ad;
 }
 
 @media screen and (max-width: 1399px) and (min-width: 768px) {
- .wrapper-text-card {
-  padding: 50px
- }
+    .wrapper-text-card {
+        padding: 50px
+    }
 
- .title-card-grid h1 {
-  font-family: var(--font-primary);
-  font-size: 60px;
-  padding: 20px 0 10px;
-  color: var(--primary-color);
- }
+    .title-card-grid h1 {
+        font-family: var(--font-primary);
+        font-size: 60px;
+        padding: 20px 0 10px;
+        color: var(--primary-color);
+    }
 }
 
 @media screen and (max-width: 989px) {
 
 
- .wrapper-text-card {
-  padding: 160px 100px;
-  text-align: left;
-  overflow: hidden;
- }
+    .wrapper-text-card {
+        padding: 160px 100px;
+        text-align: left;
+        overflow: hidden;
+    }
+
+    .grid-belsan {
+        gap: 10px;
+    }
 }
 
 @media screen and (max-width: 576px) {
- .wrapper-text-card {
-  background-color: var(--white-color);
-  height: 100%;
-  padding: 60px 30px;
-  text-align: left;
-  overflow: hidden;
-  margin-top: 10px;
- }
+    .wrapper-text-card {
+        background-color: var(--white-color);
+        height: 100%;
+        padding: 60px 30px;
+        text-align: left;
+        overflow: hidden;
+    }
 
- .title-card-grid h1 {
-  font-family: var(--font-primary);
-  font-size: 40px;
-  padding: 20px 0 10px;
-  color: var(--primary-color);
- }
+    .title-card-grid h1 {
+        font-family: var(--font-primary);
+        font-size: 40px;
+        padding: 20px 0 10px;
+        color: var(--primary-color);
+    }
 }
