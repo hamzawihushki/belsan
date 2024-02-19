@@ -137,18 +137,61 @@ html {
 
 .square {
  position: absolute;
- width: 500px;
- height: 500px;
+ width: 400px;
+ height: 300px;
  z-index: 55;
  left: 50%;
- top: 50%;
+ top: 40%;
  transform: translate(-50%, -50%);
  display: flex;
  flex-direction: column;
  align-items: center;
- justify-content: space-evenly;
+ justify-content: space-around;
  text-align: center;
- backdrop-filter: contrast(.4);
+ gap: 10px;
+ background-color: #ffffffa1;
+}
+
+.square .head {
+ position: relative;
+ height: 100px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.square .head ::after {
+ content: "";
+ width: 50px;
+ height: 2px;
+ background-color: var(--secondary-color);
+ position: absolute;
+ left: 50%;
+ bottom: -10px;
+ transform: translateX(-50%);
+}
+
+.square .head small {
+ color: #919191;
+}
+
+.square .head h1 {
+ font-family: var(--font-primary);
+ font-size: 35px;
+}
+
+.square p {
+ font-size: 13px;
+
+ color: #333333ad;
+ font-weight: 700;
+}
+
+.square .b {
+ font-size: 13px;
+
+ color: #333333ad;
 }
 
 @media screen and (max-width: 1399px) and (min-width: 768px) {
